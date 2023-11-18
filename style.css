@@ -9,6 +9,8 @@ html {
 }
 
 body {
+  position: relative;
+  bottom: 10%;
   overflow: hidden;
   border: 1px solid transparent;
   background-color: #0c0c0c;
@@ -24,7 +26,6 @@ body {
   margin: 10px;
   position: relative;
   bottom: 0px;
-  width: 100%;
   background-color: midnightblue;
   border-radius: 5px;
 }
