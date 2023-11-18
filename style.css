@@ -7,10 +7,11 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  
 }
 
 .main {
+  height: 500px;
+  position: relative;
   background-color: midnightblue;
   margin: 10px;
   border-radius: 5px;
