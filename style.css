@@ -1,25 +1,322 @@
-/* a minimalist set of CSS resets */
-
-/* default to border-box */
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* adjust typography defaults */
 body {
-  margin: 1rem;
-  font-family: sans-serif;
-  line-height: 1.5;
+  background-color: #000000;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+}
+html,
+body {
+  overflow: hidden;
+  position: relative;
 }
 
-/* images and videos max out at full width */
-img,
-video {
-  height: auto;
-  max-width: 100%;
+nav {
+  padding: 2px;
+}
+
+h2 {
+  color: silver;
+  text-shadow: 1px 1px 2px black;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, -1px 1px 0 #000000,
+    1px -1px 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 0 1px 0 #000000,
+    0 -1px 0 #000000;
+  bottom: 10px;
+  bottom: 10px;
+}
+
+nav section article {
+  list-style: none;
+  display: inline;
+  margin-right: 30px;
+}
+
+nav section a article {
+  text-decoration: none;
+}
+
+a {
+  color: silver;
+  white-space: nowrap;
+  text-decoration: none;
+  text-shadow: 1px 1px 10px #00008b;
+  white-space: nowrap;
+  color: silver;
+  display: relative;
+}
+
+section article a {
+  color: #333333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #87ceeb;
+  font-weight: #001d42, #001d42;
+}
+
+nav section article a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: linear-gradient(black, black);
+  background: -moz-linear-gradient(black, black);
+  background: -webkit-linear-gradient(#001d42, silver);
+  height: 7%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 15px;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+}
+
+span {
+  color: silver;
+  white-space: nowrap;
+  text-decoration: none;
+  text-shadow: 5px 5px 10px #00008b;
+  white-space: nowrap;
+  color: silver;
+  display: relative;
+  color: silver;
+  font-size: 30px;
+}
+
+iframe {
+  padding-top: 3.15%;
+  border: none;
+}
+
+h1 {
+  position: relative;
+  top: 15px;
+  list-style: none;
+  font-size: 13px;
+}
+
+h5 {
+  text-shadow: 1px 1px 10px #00008b;
+}
+
+div.header-dropmenu {
+  margin: 0 0 0 auto;
+  list-style: none;
+  width: 18%;
+  height: 40px;
+  padding: 10 0 20px;
+  display: table;
+  table-layout: fixed;
+}
+
+div.header-dropmenu > .block {
+  position: relative;
+  margin-top: 3%;
+  top: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  border: 0 solid #f8f8f8;
+}
+
+div.header-dropmenu .block a {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+div.header-dropmenu .block section {
+  visibility: hidden;
+  width: 100%;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  margin: 0;
+  padding: 0;
+  border: 0 solid #000000;
+  border-top: none;
+}
+
+div.header-dropmenu .block:hover section {
+  visibility: visible;
+}
+
+div.header-dropmenu .block section .block {
+  background: silver;
+  transition: all 0.2s ease;
+}
+
+div.header-dropmenu .block:hover section .block:hover {
+  background: #f8f8f8;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  position: relative;
+  bottom: 30px;
+  right: 100px;
+}
+
+div {
+  color: silver;
+}
+
+.fullscreen {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  height: 20px;
+  width: 20px;
+  right: 113px;
+  bottom: 10px;
+}
+
+.settings {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  bottom: 40px;
+  left: 730px;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dialog {
+  display: none;
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .dialog {
+    width: 50%;
+  }
+}
+
+.password_box {
+  display: flex;
+  /*アイコン、テキストボックスを調整する*/
+  position: relative;
+  left: 10px;
+  bottom: 30px;
+  align-items: center;
+  /*アイコン、テキストボックスを縦方向の中心に*/
+  justify-content: center;
+  /*アイコン、テキストボックスを横方向の中心に*/
+  width: 54%; /*長さ*/
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid midnightblue;
+}
+
+.password_inner {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  /*.password_boxの枠線お角一部被るため透明に*/
+  position: relative;
+  bottom: 10px;
+}
+
+#text4 {
+  position: absolute;
+  z-index: 1;
+  /*.password_stringよりも上に配置*/
+  height: 70%;
+  width: 100%;
+  top: 15px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: none;
+  /*枠線非表示*/
+  outline: none;
+  /*フォーカス時の枠線非表示*/
+  padding: 0 10px;
+  font-size: 16px;
+  background-color: transparent;
+  /*後ろの.password_stringを見せるため*/
+  box-sizing: border-box;
+  /*横幅の解釈をpadding, borderまでとする*/
+}
+
+.password_string {
+  position: absolute;
+  height: 100%;
+  width: 80px;
+  /*文字列分の長さ*/
+  top: 0;
+  left: 0;
+  bottom: 5px;
+  right: 0;
+  padding-left: 10px;
+  /*position: absolute;でのmarginは親要素はみ出す*/
+  font-size: 16px;
+  line-height: 50px;
+  /*文字列を縦方向にmiddleに見せるため*/
+  background-color: transparent;
+  color: #191970;
+  box-sizing: border-box;
+  /*横幅の解釈をpadding, borderまでとする*/
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+
+.fa-eye-slash {
+  /*アイコンに一定のスペースを設ける*/
+  height: 20px;
+  width: 20px;
+  padding: 5px 5px;
+}
+
+/*アニメーション*/
+#text4:focus + .password_string {
+  color: skyblue;
+  font-size: 12.5px;
+  line-height: 10px;
+  width: 85px;
+  height: 10px;
+  padding: 15 2px;
+  background-color: transparent;
+  top: 17.5px;
+  transform: translate3d(5px, -6px, 0);
 }
