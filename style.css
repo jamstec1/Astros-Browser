@@ -2,31 +2,36 @@ html {
   overflow: hidden;
   border: 1px solid transparent;
   position: relative;
-  height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
+  height: 100%;
+  background-color: #0c0c0c;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
   position: relative;
   overflow: hidden;
-  border: 1px solid transparent;
-  background-color: #0c0c0c;
   font-size: 13px;
   font-family: sans-serif;
   overflow: hidden;
   margin: 0;
-  padding: 0;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .main {
   height: 100%;
-  margin: 10px;
+  width: 100%;
   position: relative;
   bottom: 0px;
   background-color: midnightblue;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 nav {
