@@ -97,32 +97,6 @@ div {
   color: silver;
 }
 
-.fullscreen {
-  position: relative;
-  height: 40px;
-  width: 40px;
-  outline: none;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  height: 20px;
-  width: 20px;
-  right: 113px;
-  bottom: 10px;
-}
-
-.settings {
-  position: relative;
-  height: 25px;
-  width: 25px;
-  outline: none;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  bottom: 40px;
-  left: 730px;
-}
-
 img {
   position: absolute;
   top: 0;
