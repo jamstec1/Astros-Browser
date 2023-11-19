@@ -73,23 +73,25 @@ body {
 
 #buttons {
   display: flex;
-  background-color:green;
+  align-items: center;
+  
+  background-color:black;
   box-sizing: border-box;
   width: fit-content;
-  height: 29px;
+  height: 27px;
   border-radius: 10px;
 }
 
 .button {
   position: flex;
   justify-content: center;
-  align-items: center;
-  padding: 2px 0px;
-  margin: 0px px;
+  padding: 0px 0px;
+  margin: 0px 0px;
 }
 
 .button svg{
-  margin: 0 1px;
+  margin: 0 0px;
+  align-items: center;
   background-color:silver;
   box-sizing: border-box;
   border-radius: 10px;
