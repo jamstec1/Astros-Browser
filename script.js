@@ -47,7 +47,7 @@ search.addEventListener("keypress", function (e) {
     urlbar = document.getElementById("search").value;
     if (urlbar) {
       if (urlbar.indexOf(".") === -1) {
-        
+        xxx
       } else {
       if (urlbar.indexOf("https://") === -1) {
         URL = "https://" + urlbar;
