@@ -67,7 +67,7 @@ body {
 
 #bar {
   box-sizing: border-box;
-  width: calc(100% - 150px);
+  width: calc(100% - 70px);
   flex-direction: column;
 }
 
@@ -186,7 +186,7 @@ img {
   box-sizing: border-box;
   position: absolute;
   top: 0;
-  left: 0;
-  width: ;
-  height: 100%;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px 0 0 0;
 }
