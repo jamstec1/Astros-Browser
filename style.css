@@ -109,13 +109,14 @@ svg {
 
 #urlbar {
   width: 100%;
-  padding: 5px;
   border-radius: 13px;
   background-color: #343434;
+  height:70%;
 }
 
 ::placeholder {
   color: silver;
+  font-weight: lighter;
 }
 
 #head1 {
