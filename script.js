@@ -50,10 +50,12 @@ urlbar.addEventListener("keypress", function (e) {
       if (linkbar.indexOf(".") === -1) {
         switch (searchtype) {
           case "google":
-            
+            console.log("google")
+            URL = ""
+            break;
         }
         URL = "https://"
-      } else {
+      }
       if (linkbar.indexOf("https://") === -1) {
         URL = "https://" + linkbar;
       } else {
