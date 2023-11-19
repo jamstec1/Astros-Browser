@@ -37,7 +37,7 @@ body {
 #browser {
   box-sizing: border-box;
   height: 100%;
-  width: 70%;
+  width: 100%;
 }
 
 #headbar {
@@ -49,10 +49,24 @@ body {
   border-radius: 10px 10px 0px 0px;
 }
 
+#flex {
+  width: 75%;
+  display: flex;
+  box-sizing:border-box;
+  margin-left: 25%;
+}
+
+#home {
+  background-color: yellow;
+}
+
+#bar {
+  position
+}
 #head1 {
   background-color: white;
   height: 35px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 0px 10px 0px 0px;
 }
 
 #head2 {
