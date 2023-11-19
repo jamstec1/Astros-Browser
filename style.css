@@ -81,11 +81,15 @@ body {
 }
 
 .button {
-  margin: 2px 0px;
+  position: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 0px;
 }
 
 .button svg{
-  padding: 2px 2px;
+  margin: 0px 0px;
+  padding: 0px px;
   background-color:silver;
   box-sizing: border-box;
   border-radius: 10px;
