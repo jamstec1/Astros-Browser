@@ -1,4 +1,3 @@
-const header = document.getElementById("mainHeader");
 function fullscreen() {
   document.documentElement.requestFullscreen();
 } // 全画面モードにする

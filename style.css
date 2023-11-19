@@ -71,6 +71,15 @@ body {
   flex-direction: column;
 }
 
+.buttons {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: green;
+  height: 27px;
+}
+
 .button {
     display: flex;
     justify-content: center;
