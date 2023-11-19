@@ -158,6 +158,7 @@ svg {
 
 #display {
   position: flex;
+  vertical-align:top;
   align-items: flex-start;
   box-sizing: border-box;
   padding-top: 90px;
@@ -168,8 +169,10 @@ svg {
 }
 
 iframe {
-  align-items: flex-start;
+  vertical-align:top;
   box-sizing: border-box;
+  height: 100%;
+  width: 100%;
   border: none;
   border-radius: 0 0 10px 10px;
 }
