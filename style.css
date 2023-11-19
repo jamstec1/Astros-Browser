@@ -121,6 +121,10 @@ svg {
   font-weight: lighter;
 }
 
+#fullscreen {
+  background-color: blue;
+}
+
 #head1 {
   box-sizing: border-box;
   display: flex;
