@@ -73,26 +73,16 @@ body {
 
 #buttons {
   display: flex;
-  width: fit-content;
-  border-radius: 7px;
-  height: 100%;
-  margin: 2.5px;
-  padding-top: 1.25px;
+  background-color:green;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: silver;
+  width: 
+  height: 29px;
 }
 
 .button {
-  border-radius: 5px;
-  padding: 2.5px;
-  margin: 0 2.5px;
-  width: fit-content;
-  height: calc(100% - 4px);
+  margin: 2px;
+  background-color:silver;
   box-sizing: border-box;
-  background-color: skyblue;
 }
 
 #head1 {
