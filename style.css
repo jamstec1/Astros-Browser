@@ -46,35 +46,44 @@ body {
   box-sizing:border-box;
   height: 105px;
   width: 100%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
 }
 
 #flex {
-  width: 75%;
+  width: 100%;
+  height: 70px;
   display: flex;
   box-sizing:border-box;
-  margin-left: 25%;
+  background-color: silver;
+  border-radius: 10px 10px 0 0;
 }
 
 #home {
   background-color: yellow;
+  width: 150px;
+  border-radius: 10px 0 0 0;
 }
 
 #bar {
-  position
+  width: calc(100% - 150px);
+  flex-direction: column;
 }
+
 #head1 {
+  display: flex;
   background-color: white;
   height: 35px;
   border-radius: 0px 10px 0px 0px;
 }
 
 #head2 {
+  display: flex;
   background-color: orange;
   height: 35px;
 }
 
 #head3 {
+  display: flex;
   background-color: pink;
   height: 35px;
 }
