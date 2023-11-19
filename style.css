@@ -111,6 +111,11 @@ svg {
   width: 100%;
   padding: 5px;
   border-radius: 13px;
+  background-color: #343434;
+}
+
+::placeholder {
+  color: silver;
 }
 
 #head1 {
