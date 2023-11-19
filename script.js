@@ -38,21 +38,21 @@ $("#text4")
     );
   });
 
-let search = document.getElementById('urlbar');
-let urlbar = "0"
+let urlbar = document.getElementById('urlbar');
+let linkbar = "0"
 let UB = document.getelementById("UB");
 
 search.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {
-    urlbar = document.getElementById("search").value;
-    if (urlbar) {
-      if (urlbar.indexOf(".") === -1) {
+    linkbar = document.getElementById("urlbar").value;
+    if (linkbar) {
+      if (linkbar.indexOf(".") === -1) {
         xxx
       } else {
-      if (urlbar.indexOf("https://") === -1) {
-        URL = "https://" + urlbar;
+      if (linkbar.indexOf("https://") === -1) {
+        URL = "https://" + linkbar;
       } else {
-        URL = urlbar;
+        URL = linkbar;
       }
       if (number === foremost) {
         if (URL !== urls[foremost]) {
@@ -63,7 +63,7 @@ search.addEventListener("keypress", function (e) {
         console.log(urls);
         console.log(number);
         console.log(foremost);
-        document.getElementById("text4").value = URL;
+        document.getElementById('urlbar').value = URL;
         UB.location = URL;
       } else {
         if (URL !== urls[foremost]) {
@@ -75,7 +75,7 @@ search.addEventListener("keypress", function (e) {
         console.log(urls);
         console.log(number);
         console.log(foremost);
-        document.getElementById("text4").value = URL;
+        document.getElementById("urlbar").value = URL;
         UB.location = URL;
       }
     }
