@@ -157,9 +157,9 @@ svg {
 }
 
 #display {
-  position: flex;
-  vertical-align:top;
+  display: flex;
   align-items: flex-start;
+  justify-content: flex-start;
   box-sizing: border-box;
   padding-top: 90px;
   width: 100%;
