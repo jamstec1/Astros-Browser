@@ -42,12 +42,12 @@ let urlbar = document.getElementById('urlbar');
 let linkbar = "0"
 let UB = document.getelementById("UB");
 
-search.addEventListener("keypress", function (e) {
+urlbar.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {
     linkbar = document.getElementById("urlbar").value;
     if (linkbar) {
       if (linkbar.indexOf(".") === -1) {
-        xxx
+        U
       } else {
       if (linkbar.indexOf("https://") === -1) {
         URL = "https://" + linkbar;
@@ -80,7 +80,7 @@ search.addEventListener("keypress", function (e) {
       }
     }
   }
-});
+}});
 
 let number = -1;
 let foremost = -1;
