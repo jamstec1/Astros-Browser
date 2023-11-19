@@ -112,6 +112,8 @@ svg {
   border-radius: 13px;
   background-color: #343434;
   height:70%;
+  border: none;
+  outline: none;
 }
 
 ::placeholder {
