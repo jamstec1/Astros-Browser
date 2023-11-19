@@ -114,6 +114,7 @@ svg {
   height:70%;
   border: none;
   outline: none;
+  color: white;
 }
 
 ::placeholder {
@@ -122,7 +123,11 @@ svg {
 }
 
 #fullscreen {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   background-color: blue;
+  border-radius: 10px;
 }
 
 #head1 {
