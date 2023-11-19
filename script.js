@@ -46,7 +46,9 @@ search.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {
     urlbar = document.getElementById("search").value;
     if (urlbar) {
-      if (urlbar = )
+      if (urlbar.indexOf(".") === -1) {
+        
+      } else {
       if (urlbar.indexOf("https://") === -1) {
         URL = "https://" + urlbar;
       } else {
@@ -76,8 +78,6 @@ search.addEventListener("keypress", function (e) {
         document.getElementById("text4").value = URL;
         UB.location = URL;
       }
-    } else {
-      console.log("error"); //削除
     }
   }
 });
