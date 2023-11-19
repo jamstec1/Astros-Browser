@@ -38,18 +38,19 @@ $("#text4")
     );
   });
 
-let text4 = document.getElementById("text4");
-let urlvar = "0"
+let search = document.getElementById('urlbar');
+let urlbar = "0"
 let UB = document.getelementById("UB");
 
-text4.addEventListener("keypress", function (e) {
+search.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {
-    urlvar = document.getElementById("text4").value;
-    if (urlvar) {
-      if (urlvar.indexOf("https://") === -1) {
-        URL = "https://" + urlvar;
+    urlbar = document.getElementById("search").value;
+    if (urlbar) {
+      if (urlbar = )
+      if (urlbar.indexOf("https://") === -1) {
+        URL = "https://" + urlbar;
       } else {
-        URL = urlvar;
+        URL = urlbar;
       }
       if (number === foremost) {
         if (URL !== urls[foremost]) {
