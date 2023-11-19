@@ -157,7 +157,8 @@ svg {
 }
 
 #display {
-  position: relative;
+  position: flex;
+  align-items: flex-start;
   box-sizing: border-box;
   padding-top: 90px;
   width: 100%;
@@ -167,8 +168,10 @@ svg {
 }
 
 iframe {
+  align-items: flex-start;
   box-sizing: border-box;
   border: none;
+  border-radius: 0 0 10px 10px;
 }
 
 nav {
