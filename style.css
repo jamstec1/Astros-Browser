@@ -75,14 +75,20 @@ body {
   display: flex;
   background-color:green;
   box-sizing: border-box;
-  width: 
+  width: fit-content;
   height: 29px;
+  border-radius: 10px;
 }
 
 .button {
-  margin: 2px;
+  margin: 2px 0px;
+}
+
+.button svg{
+  padding: 2px 2px;
   background-color:silver;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 #head1 {
