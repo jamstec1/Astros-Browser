@@ -166,6 +166,10 @@ svg {
   border-radius: 0 0 10px 10px;
 }
 
+iframe {
+  box-sizing: border-box;
+}
+
 nav {
   padding: 2px;
 }
