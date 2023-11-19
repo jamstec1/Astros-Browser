@@ -41,13 +41,18 @@ $("#text4")
 let urlbar = document.getElementById('urlbar');
 let linkbar = "0"
 let UB = document.getelementById("UB");
+let searchtype = "google"
 
 urlbar.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {
     linkbar = document.getElementById("urlbar").value;
     if (linkbar) {
       if (linkbar.indexOf(".") === -1) {
-        U
+        switch (searchtype) {
+          case "google":
+            
+        }
+        URL = "https://"
       } else {
       if (linkbar.indexOf("https://") === -1) {
         URL = "https://" + linkbar;
