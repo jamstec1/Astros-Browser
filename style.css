@@ -59,17 +59,20 @@ body {
 }
 
 #home {
+  box-sizing:border-box;
   background-color: yellow;
   width: 150px;
   border-radius: 10px 0 0 0;
 }
 
 #bar {
+  box-sizing:border-box;
   width: calc(100% - 150px);
   flex-direction: column;
 }
 
 #head1 {
+  box-sizing:border-box;
   display: flex;
   background-color: white;
   height: 35px;
@@ -77,12 +80,14 @@ body {
 }
 
 #head2 {
+  box-sizing:border-box;
   display: flex;
   background-color: orange;
   height: 35px;
 }
 
 #head3 {
+  box-sizing:border-box;
   display: flex;
   background-color: pink;
   height: 35px;
@@ -187,18 +192,16 @@ div {
   color: silver;
 }
 
-.fullscreen {
+button {
   position: relative;
-  height: 40px;
-  width: 40px;
+  box-sizing:border-box;
+  
+  height: 25px;
+  width: 25px;
   outline: none;
   cursor: pointer;
-  background-color: transparent;
+  background-color: xtransparent;
   border: none;
-  height: 20px;
-  width: 20px;
-  right: 113px;
-  bottom: 10px;
 }
 
 .settings {
