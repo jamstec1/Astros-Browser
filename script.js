@@ -38,10 +38,10 @@ $("#text4")
     );
   });
 
-let urlbar = document.getElementById('urlbar');
-let linkbar = "0"
+let urlbar = document.getElementById("urlbar");
+let linkbar = "0";
 let UB = document.getelementById("UB");
-let searchtype = "google"
+let searchtype = "google";
 
 urlbar.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {
@@ -51,7 +51,10 @@ urlbar.addEventListener("keypress", function (e) {
         switch (searchtype) {
           case "google":
             console.log("google");
-            URL = "https://www.google.com/search?q=" + linkbar + "as&sca_esv=583768629&igu=1";
+            URL =
+              "https://www.google.com/search?q=" +
+              linkbar +
+              "as&sca_esv=583768629&igu=1";
             break;
           case "bing":
             console.log("bing");
@@ -59,11 +62,11 @@ urlbar.addEventListener("keypress", function (e) {
             break;
         }
       } else {
-      if (linkbar.indexOf("https://") === -1) {
-        URL = "https://" + linkbar;
-      } else {
-        URL = linkbar;
-      }
+        if (linkbar.indexOf("https://") === -1) {
+          URL = "https://" + linkbar;
+        } else {
+          URL = linkbar;
+        }
       }
       if (number === foremost) {
         if (URL !== urls[foremost]) {
@@ -74,7 +77,7 @@ urlbar.addEventListener("keypress", function (e) {
         console.log(urls);
         console.log(number);
         console.log(foremost);
-        document.getElementById('urlbar').value = URL;
+        document.getElementById("urlbar").value = URL;
         UB.location = URL;
       } else {
         if (URL !== urls[foremost]) {
@@ -91,7 +94,7 @@ urlbar.addEventListener("keypress", function (e) {
       }
     }
   }
-}});
+});
 
 let number = -1;
 let foremost = -1;
@@ -100,33 +103,31 @@ var URL = 0;
 
 function link(URL) {
   //クリック時
-  if (URL) {
-    if (number === foremost) {
-      //最先端か確認
-      if (URL !== urls[foremost]) {
-        number++;
-        foremost++;
-        urls.push(URL);
-      }
-      console.log(urls);
-      console.log(number);
-      console.log(foremost);
-      document.getElementById("text4").value = URL;
-      UB.location = URL;
-    } else {
-      if (URL !== urls[foremost]) {
-        //最先端か確認
-        foremost++; //重複リンクは表示しない
-        urls.push(URL);
-      }
-      number = foremost; //最先端の位置に設定
-      console.log(urls);
-      console.log(number);
-      console.log(foremost);
-      console.log("ok");
-      document.getElementById("text4").value = URL;
-      UB.location = URL;
+  if (number === foremost) {
+    //最先端か確認
+    if (URL !== urls[foremost]) {
+      number++;
+      foremost++;
+      urls.push(URL);
     }
+    console.log(urls);
+    console.log(number);
+    console.log(foremost);
+    document.getElementById("text4").value = URL;
+    UB.location = URL;
+  } else {
+    if (URL !== urls[foremost]) {
+      //最先端か確認
+      foremost++; //重複リンクは表示しない
+      urls.push(URL);
+    }
+    number = foremost; //最先端の位置に設定
+    console.log(urls);
+    console.log(number);
+    console.log(foremost);
+    console.log("ok");
+    document.getElementById("text4").value = URL;
+    UB.location = URL;
   }
 }
 
