@@ -34,15 +34,39 @@ body {
   border-radius: 10px;
 }
 
+#browser {
+  box-sizing: border-box;
+  height: 100%;
+  width: 70%;
+}
+
 #headbar {
+  position: relative;
   background-color: skyblue;
   box-sizing:border-box;
-  height: 90px;
+  height: 105px;
   width: 100%;
   border-radius: 10px 10px 0px 0px;
 }
 
+#head1 {
+  background-color: white;
+  height: 35px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#head2 {
+  background-color: orange;
+  height: 35px;
+}
+
+#head3 {
+  background-color: pink;
+  height: 35px;
+}
+
 #display {
+  position: relative;
   box-sizing:border-box;
   padding-top: 90px;
   width: 100%;
