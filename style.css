@@ -77,7 +77,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   background-color: green;
-  height: 25px;
+  height: 27px;
 }
 
 .button {
@@ -95,7 +95,7 @@ body {
 }
 
 .button svg{
-    padding: 0px;
+    padding: 2px;
     box-sizing: border-box;
     width: 30px;
     margin: 0 2px;
