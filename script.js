@@ -50,16 +50,20 @@ urlbar.addEventListener("keypress", function (e) {
       if (linkbar.indexOf(".") === -1) {
         switch (searchtype) {
           case "google":
-            console.log("google")
-            URL = ""
+            console.log("google");
+            URL = "https://www.google.com/search?q=" + linkbar + "as&sca_esv=583768629&igu=1";
+            break;
+          case "bing":
+            console.log("bing");
+            URL = "https://www.bing.com/search?q=" + linkbar;
             break;
         }
-        URL = "https://"
-      }
+      } else {
       if (linkbar.indexOf("https://") === -1) {
         URL = "https://" + linkbar;
       } else {
         URL = linkbar;
+      }
       }
       if (number === foremost) {
         if (URL !== urls[foremost]) {
