@@ -77,25 +77,29 @@ body {
   align-items: center;
   justify-content: flex-start;
   background-color: green;
-  height: 27px;
+  height: 31px;
+  width: fit-content;
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background: silver;
-    width: fit-content;
-    margin: 4px;
-    box-sizing: border-box;
-    margin: 2px;
-    padding: 2px 0px;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: silver;
+  width: fit-content;
+  margin: 5px;
+  box-sizing: border-box;
+  padding: 2.5px 0px;
+  height: 25px;
+}
+
+svg {
+  width:25px;
+  height:25px;
 }
 
 .button svg{
-    padding: 2px;
     box-sizing: border-box;
     width: 30px;
     margin: 0 2px;
