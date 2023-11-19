@@ -91,17 +91,17 @@ body {
   margin: 5px;
   box-sizing: border-box;
   padding: 2.5px 0px;
-  height: 25px;
+  height: 31px;
 }
 
 svg {
-  width:25px;
-  height:25px;
+  width:33px;
+  height:27px;
 }
 
 .button svg{
     box-sizing: border-box;
-    width: 30px;
+    width: 33px;
     margin: 0 2px;
     background: blue;
     border-radius: 10px;
