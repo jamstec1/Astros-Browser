@@ -110,7 +110,7 @@ function link(URL) {
       foremost++;
       urls.push(URL);
     }
-    console.log(urls);
+    alert(urls);
     console.log(number);
     console.log(foremost);
     document.getElementById("text4").value = URL;
