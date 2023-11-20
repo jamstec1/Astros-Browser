@@ -78,7 +78,6 @@ urlbar.addEventListener("keypress", function (e) {
 });
 
 function link(URL) {
-  alert("link");
   //クリック時
   if (number === foremost) {
     //最先端か確認

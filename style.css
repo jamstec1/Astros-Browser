@@ -57,7 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background: silver;
+  background-color: black;
   width: fit-content;
   margin: px;
   box-sizing: border-box;
@@ -65,7 +65,9 @@ body {
   height: 35px;
 }
 
-svg {
+svg#bar {
+  background-color: white;
+  mix-blend-mode: difference;
   width:31px;
   height:31px;
 }
@@ -74,7 +76,6 @@ svg {
     box-sizing: border-box;
     width: 31px;
     margin: 0 2px;
-    background: blue;
     border-radius: 10px;
 }
 
