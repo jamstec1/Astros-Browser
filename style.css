@@ -65,7 +65,7 @@ body {
   height: 35px;
 }
 
-svg#bar {
+svg {
   background-color: white;
   mix-blend-mode: difference;
   width:31px;
@@ -98,11 +98,10 @@ svg#bar {
 }
 
 #fullscreen {
+  background-color: #dbdbd3;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: blue;
-  border-radius: 10px;
 }
 
 #head1 {
@@ -110,7 +109,7 @@ svg#bar {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: white;
+  background-color: #24242c;
   height: 35px;
   border-radius: 10px 10px 0px 0px;
   margin: 0 0 5px 0;
