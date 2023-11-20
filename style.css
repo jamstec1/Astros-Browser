@@ -45,7 +45,7 @@ body {
   position: relative;
   background-color: skyblue;
   box-sizing: border-box;
-  height: 100px;
+  height: 80px;
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
@@ -121,7 +121,7 @@ svg {
   align-items: center;
   justify-content: flex-start;
   background-color: white;
-  height: 30px;
+  height: 40px;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -130,22 +130,14 @@ svg {
   display: flex;
   align-items: center;
   background-color: orange;
-  height: 30px;
-}
-
-#head3 {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  background-color: pink;
-  height: 30px;
+  height: 40px;
 }
 
 #display {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  height: calc(100% - 90px);
+  height: calc(100% - 80px);
   background-color: blue;
   border-radius: 0 0 10px 10px;
 }
