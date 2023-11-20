@@ -1,11 +1,16 @@
-
-let urlbar = document.getElementById('urlbar');
-alert(urlbar + "url");
+alert("urlbar");
+let urlbar = document.getElementById("urlbar");
+alert(urlbar + "urlbar");
 let linkbar = "0";
 let searchtype = "google";
 let UB =document.getElementById("ub");
 alert(UB + "ub")
 
+
+let number = -1;
+let foremost = -1;
+var urls = [];
+var URL = 0;
 
 function fullscreen() {
   document.documentElement.requestFullscreen();
@@ -34,7 +39,7 @@ urlbar.addEventListener("keypress", function (e) {
             URL =
               "https://www.google.com/search?q=" +
               linkbar +
-              "as&sca_esv=583768629&igu=1";
+              "&sca_esv=583768629&igu=1";
             break;
           case "bing":
             console.log("bing");
@@ -57,6 +62,7 @@ urlbar.addEventListener("keypress", function (e) {
         console.log(urls);
         console.log(number);
         console.log(foremost);
+        alert(URL)
         document.getElementById("urlbar").value = URL;
         UB.location = URL;
       } else {
@@ -76,11 +82,6 @@ urlbar.addEventListener("keypress", function (e) {
   }
 });
 
-let number = -1;
-let foremost = -1;
-var urls = [];
-var URL = 0;
-
 function link(URL) {
   alert("link");
   //クリック時
@@ -94,7 +95,7 @@ function link(URL) {
     alert(urls);
     console.log(number);
     console.log(foremost);
-    document.getElementById("text4").value = URL;
+    document.getElementById("urlbar").value = URL;
     UB.location = URL;
   } else {
     if (URL !== urls[foremost]) {
@@ -107,7 +108,7 @@ function link(URL) {
     console.log(number);
     console.log(foremost);
     console.log("ok");
-    document.getElementById("text4").value = URL;
+    document.getElementById("urlbar").value = URL;
     UB.location = URL;
   }
 }
@@ -120,8 +121,12 @@ function go() {
     URL = urls[number];
     console.log(number);
     console.log(foremost);
-    document.getElementById("text4").value = URL;
+    document.getElementById("urlbar").value = URL;
     UB.location = URL;
+  } else {
+    alert("error");
+    alert(number);
+    alert(foremost);
   }
 }
 
@@ -133,8 +138,12 @@ function back() {
     URL = urls[number];
     console.log(number);
     console.log(foremost);
-    document.getElementById("text4").value = URL;
+    document.getElementById("urlbar").value = URL;
     UB.location = URL;
+  } else {
+    alert("error");
+    alert(number);
+    alert(foremost);
   }
 }
 
@@ -149,6 +158,10 @@ function reload() {
     console.log(number);
     console.log(foremost);
     UB.location = URL;
+  } else {
+    alert("error");
+    alert(number);
+    alert(foremost);
   }
 }
 alert("一周")
