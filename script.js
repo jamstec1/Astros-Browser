@@ -17,6 +17,7 @@ function help() {
 let urlbar = document.getElementById("urlbar");
 let linkbar = "0";
 let UB = document.getelementById("UB");
+alert("2");
 let searchtype = "google";
 alert("ok");
 
