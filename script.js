@@ -102,6 +102,7 @@ var urls = [];
 var URL = 0;
 
 function link(URL) {
+  alert("input");
   //クリック時
   if (number === foremost) {
     //最先端か確認
