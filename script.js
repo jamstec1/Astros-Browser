@@ -13,13 +13,15 @@ function help() {
     "無限の可能性を秘めているproxy\njavascriptを有効にしてください。\npcサイズの画面で正常に機能します。\nOpenNewWindowで大画面表示します。\nproxy更新及びリンクのは(proxy寄付)ボタンから。"
   );
 }
-
-let urlbar = document.getElementById("urlbar");
+alert("start");
+let urlbar = document.getElementById('urlbar');
+alert("1");
 let linkbar = "0";
-let UB = document.getelementById("UB");
 alert("2");
+alert(document.getelementById("UB"));
+alert("3");
 let searchtype = "google";
-alert("ok");
+alert("error");
 
 urlbar.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {
