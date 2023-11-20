@@ -59,16 +59,9 @@ body {
   border-radius: 10px 10px 0 0;
 }
 
-#home {
-  box-sizing: border-box;
-  background-color: yellow;
-  width: 60px;
-  border-radius: 10px 0 0 0;
-}
-
 #bar {
   box-sizing: border-box;
-  width: calc(100% - 60px);
+  width: 100%;
   flex-direction: column;
 }
 
