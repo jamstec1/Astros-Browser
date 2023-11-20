@@ -3,12 +3,10 @@ let urlbar = document.getElementById("urlbar");
 alert(urlbar + "urlbar");
 let linkbar = "0";
 let searchtype = "google";
-let UB =document.getElementById("ub");
-alert(UB + "ub")
 
 
-let number = -1;
-let foremost = -1;
+let number = 0;
+let foremost = 0;
 var urls = [];
 var URL = 0;
 
@@ -62,9 +60,8 @@ urlbar.addEventListener("keypress", function (e) {
         console.log(urls);
         console.log(number);
         console.log(foremost);
-        alert(URL)
         document.getElementById("urlbar").value = URL;
-        UB.location = URL;
+        document.getElementById("ub").src = URL;
       } else {
         if (URL !== urls[foremost]) {
           //
@@ -76,7 +73,7 @@ urlbar.addEventListener("keypress", function (e) {
         console.log(number);
         console.log(foremost);
         document.getElementById("urlbar").value = URL;
-        UB.location = URL;
+        document.getElementById("ub").src = URL;
       }
     }
   }
@@ -96,7 +93,7 @@ function link(URL) {
     console.log(number);
     console.log(foremost);
     document.getElementById("urlbar").value = URL;
-    UB.location = URL;
+    document.getElementById("ub").src = URL;
   } else {
     if (URL !== urls[foremost]) {
       //最先端か確認
@@ -109,7 +106,7 @@ function link(URL) {
     console.log(foremost);
     console.log("ok");
     document.getElementById("urlbar").value = URL;
-    UB.location = URL;
+    document.getElementById("ub").src = URL;
   }
 }
 
@@ -122,7 +119,7 @@ function go() {
     console.log(number);
     console.log(foremost);
     document.getElementById("urlbar").value = URL;
-    UB.location = URL;
+    document.getElementById("ub").src = URL;
   } else {
     alert("error");
     alert(number);
@@ -139,7 +136,7 @@ function back() {
     console.log(number);
     console.log(foremost);
     document.getElementById("urlbar").value = URL;
-    UB.location = URL;
+    document.getElementById("ub").src = URL;
   } else {
     alert("error");
     alert(number);
@@ -157,11 +154,9 @@ function reload() {
     URL = urls[number];
     console.log(number);
     console.log(foremost);
-    UB.location = URL;
+    document.getElementById("ub").src = URL;
   } else {
     alert("error");
-    alert(number);
-    alert(foremost);
   }
 }
 alert("一周")
