@@ -13,16 +13,13 @@ function help() {
     "無限の可能性を秘めているproxy\njavascriptを有効にしてください。\npcサイズの画面で正常に機能します。\nOpenNewWindowで大画面表示します。\nproxy更新及びリンクのは(proxy寄付)ボタンから。"
   );
 }
-alert("start");
 let urlbar = document.getElementById('urlbar');
-alert("1");
+alert(document.getElementById('urlbar'));
 let linkbar = "0";
-alert("2");
-alert(document.getelementById("UB"));
-alert("3");
+window.onload = function(){let UB =document.getElementById("ub")
+alert(UB)};
 let searchtype = "google";
-alert("error");
-
+alert("good");
 urlbar.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {
     linkbar = document.getElementById("urlbar").value;
@@ -76,6 +73,7 @@ urlbar.addEventListener("keypress", function (e) {
   }
 });
 
+alert("r1")
 let number = -1;
 let foremost = -1;
 var urls = [];
