@@ -14,34 +14,11 @@ function help() {
   );
 }
 
-$("#text4")
-  .focus(function () {
-    $(".password_box").animate(
-      {
-        borderTopColor: "#3be5ae",
-        borderLeftColor: "#3be5ae",
-        borderRightColor: "#3be5ae",
-        borderBottomColor: "#3be5ae",
-      },
-      200
-    );
-  })
-  .blur(function () {
-    $(".password_box").animate(
-      {
-        borderTopColor: "＃191970",
-        borderLeftColor: "＃191970",
-        borderRightColor: "＃191970",
-        borderBottomColor: "＃191970",
-      },
-      200
-    );
-  });
-
 let urlbar = document.getElementById("urlbar");
 let linkbar = "0";
 let UB = document.getelementById("UB");
 let searchtype = "google";
+alert("ok");
 
 urlbar.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {

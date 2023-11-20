@@ -65,16 +65,6 @@ body {
   flex-direction: column;
 }
 
-.buttons {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: green;
-  height: 31px;
-  width: fit-content;
-}
-
 .button {
   display: flex;
   justify-content: center;
@@ -82,14 +72,14 @@ body {
   border-radius: 10px;
   background: silver;
   width: fit-content;
-  margin: 5px;
+  margin: 2px;
   box-sizing: border-box;
   padding: 2.5px 0px;
-  height: 31px;
+  height: 29px;
 }
 
 svg {
-  width:33px;
+  width:27px;
   height:27px;
 }
 
@@ -131,7 +121,7 @@ svg {
   justify-content: flex-start;
   background-color: white;
   height: 30px;
-  border-radius: 0px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 #head2 {
