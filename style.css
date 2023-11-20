@@ -63,9 +63,11 @@ body {
   height: 35px;
 }
 
-svg {
+.only {
   background-color: white;
-  mix-blend-mode: difference;
+}
+
+svg {
   width:31px;
   height:31px;
 }
@@ -98,8 +100,8 @@ svg {
 }
 
 .leftbar {
-  background-color: #dbdbd3;
-  
+  background-color: ;
+  mix-blend-mode: difference;
   display: flex;
   align-items: center;
   justify-content: flex-start;
