@@ -100,11 +100,14 @@ svg {
 }
 
 .leftbar {
-  background-color: ;
-  mix-blend-mode: difference;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.leftbutton {
+  mix-blend-mode: difference;
+  background-color: white;
 }
 
 #tabbar {
