@@ -1,13 +1,11 @@
-alert("urlbar");
 let urlbar = document.getElementById("urlbar");
-alert(urlbar + "urlbar");
 let linkbar = "0";
 let searchtype = "google";
 
 
 let number = 0;
 let foremost = 0;
-var urls = [];
+var urls = ["https://www.8bitdash.com"];
 var URL = 0;
 
 function fullscreen() {
@@ -22,7 +20,7 @@ function info() {
 
 function help() {
   alert(
-    "無限の可能性を秘めているproxy\njavascriptを有効にしてください。\npcサイズの画面で正常に機能します。\nOpenNewWindowで大画面表示します。\nproxy更新及びリンクのは(proxy寄付)ボタンから。"
+    "無限の可能性を秘めているproxy\njavascriptを有効にしてください。\npcサイズの画面で正常に機能します。"
   );
 }
 
@@ -89,7 +87,6 @@ function link(URL) {
       foremost++;
       urls.push(URL);
     }
-    alert(urls);
     console.log(number);
     console.log(foremost);
     document.getElementById("urlbar").value = URL;
@@ -112,7 +109,6 @@ function link(URL) {
 
 function go() {
   //前
-  alert("go");
   if (number < foremost) {
     number++;
     URL = urls[number];
@@ -120,16 +116,11 @@ function go() {
     console.log(foremost);
     document.getElementById("urlbar").value = URL;
     document.getElementById("ub").src = URL;
-  } else {
-    alert("error");
-    alert(number);
-    alert(foremost);
   }
 }
 
 function back() {
   //戻る
-  alert("back");
   if (number > 0) {
     number--;
     URL = urls[number];
@@ -137,10 +128,6 @@ function back() {
     console.log(foremost);
     document.getElementById("urlbar").value = URL;
     document.getElementById("ub").src = URL;
-  } else {
-    alert("error");
-    alert(number);
-    alert(foremost);
   }
 }
 
@@ -149,14 +136,10 @@ function history() {
 }
 
 function reload() {
-  alert("reload");
-  if (foremost > "-1") {
+  if (foremost > "0") {
     URL = urls[number];
     console.log(number);
     console.log(foremost);
     document.getElementById("ub").src = URL;
-  } else {
-    alert("error");
   }
 }
-alert("一周")
