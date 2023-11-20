@@ -45,7 +45,7 @@ body {
   position: relative;
   background-color: skyblue;
   box-sizing: border-box;
-  height: 90px;
+  height: 100px;
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
@@ -72,10 +72,10 @@ body {
   border-radius: 10px;
   background: silver;
   width: fit-content;
-  margin: 2px;
+  margin: px;
   box-sizing: border-box;
-  padding: 2.5px 0px;
-  height: 29px;
+  padding: px 0px;
+  height: 30px;
 }
 
 svg {
@@ -85,20 +85,21 @@ svg {
 
 .button svg{
     box-sizing: border-box;
-    width: 33px;
+    width: 27px;
     margin: 0 2px;
     background: blue;
     border-radius: 10px;
 }
 
 #urlbar {
+  margin: 0 0 0 3px;
   width: 100%;
   border-radius: 5px;
   background-color: #343434;
   height:80%;
   border: none;
   outline: none;
-  color: white;
+  color: silver;
 }
 
 ::placeholder {
