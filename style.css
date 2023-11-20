@@ -87,8 +87,8 @@ svg {
   height: 27px;
   border: none;
   outline: none;
-  color: silver;
-  caret-color:;
+  color: #24242c;
+  caret-color:#24242c;
 }
 
 ::placeholder {
@@ -102,6 +102,10 @@ svg {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+#tabbar {
+  
 }
 
 #head1 {
