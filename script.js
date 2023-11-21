@@ -142,3 +142,9 @@ function reload() {
     document.getElementById("ub").src = URL;
   }
 }
+
+$(function(){
+  $('input[type="text"]').focus(function(){
+    $(this).select();
+  });
+});
