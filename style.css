@@ -28,7 +28,7 @@ body {
 #main {
   height: 100%;
   width: 100%;
-  position: relative;
+  position: flex;
   bottom: 0px;
   background-color: midnightblue;
   border-radius: 10px;
@@ -181,19 +181,17 @@ h1 {
   font-size: 13px;
 }
 
-h5 {
-  text-shadow: 1px 1px 10px #00008b;
-}
-
-p {
-  position: relative;
-  bottom: 30px;
-  right: 100px;
+#app {
+  width: 30%;
+  height: 100%;
+  padding-left: 0%;
+  background-color: white;
 }
 
 div {
   color: silver;
 }
+
 
 img {
   box-sizing: border-box;
