@@ -148,3 +148,7 @@ $(function(){
     $(this).select();
   });
 });
+
+function bookmark() {
+  
+}

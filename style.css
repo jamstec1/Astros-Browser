@@ -30,14 +30,14 @@ body {
   width: 100%;
   position: relative;
   bottom: 0px;
-  background-color: black;
+  background-color: midnightblue;
   border-radius: 10px;
 }
 
 #browser {
   box-sizing: border-box;
   height: 100%;
-  width: 100%;
+  width: 70%;
 }
 
 #headbar {
