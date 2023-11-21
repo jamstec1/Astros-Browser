@@ -43,7 +43,7 @@ body {
 #headbar {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   position: relative;
   background-color: #24242c;
   box-sizing: border-box;
@@ -124,9 +124,9 @@ svg {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: #24242c;
+  background-color: #404444;
   height: 35px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
   margin: 0 0 5px 0;
 }
 
@@ -134,8 +134,9 @@ svg {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  background-color:  #24242c;
-  height: 30px;
+  background-color: #303434;
+  border-radius: 10px 10px 10px 10px;
+  height: 35px;
 }
 
 #display {
