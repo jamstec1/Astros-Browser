@@ -36,9 +36,16 @@ body {
   border-radius: 10px;
 }
 
+#shelf {
+  width: 64px;
+  height:100%;
+  background-color: green;
+  border-radius: 10px;
+}
+
 #window {
   height: 100%;
-  width: calc( 100% - 50px);
+  width: calc( 100% - 63.5px);
   display: flex;
   box-sizing: border-box;
   background-color: midnightblue;
