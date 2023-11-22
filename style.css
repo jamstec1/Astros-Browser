@@ -184,7 +184,14 @@ h1 {
   height: 100%;
   margin-left: 5px;
   background-color: skyblue;
-  border-radius: 10px;
+  border-radius: 15px 15px 10px 10px;
+}
+
+#appname {
+  position: flex;
+  width: 50%;
+  font-size: 17.5px;
+  align-items: center;
 }
 
 #appheadbar {
@@ -193,38 +200,28 @@ h1 {
   background-color: white;
   box-sizing: border-box;
   flex-direction: column;
-  padding: 10px 0px 0 0px;
+  padding: 5px 5px 0px 5px;
   position: relative;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px;
 }
 
 #appwindow {
   background-color: silver;
   box-sizing: border-box;
-  height: calc( 100% - 44.5px);
+  height: calc( 100% - 34.5px);
   width: 100%;
   border-radius: 0 0 10px 10px;
 }
 
-#apphead1 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  width: 100%;
-  height: 35px;
-  background-color: green;
-  border-radius: 0px 0px 0 0;
-}
-
 #appbar {
+  justify-content: flex-start;
   display: flex;
   justify-content: center;
+  background-color: green;
   align-items: center;
   border-radius: 10px;
-  mix-blend-mode: difference;
   box-sizing: border-box;
-  height: 20px;
+  height: 25px;
 }
 
 .appbutton {
