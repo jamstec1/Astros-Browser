@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  background-color: #141414;
   position: relative;
   overflow: hidden;
   font-size: 13px;
@@ -34,6 +35,8 @@ body {
 }
 
 #browser {
+  border: 1px solid #44444c;
+  border-radius: 10px;
   box-sizing: border-box;
   height: 100%;
   width: 70%;
@@ -46,13 +49,12 @@ body {
   position: relative;
   background-color: #24242c;
   box-sizing: border-box;
-  height: 90px;
+  height: 82px;
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
 .button {
-  background-color: blue;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -125,7 +127,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   background-color: #404444;
-  height: 30px;
+  height: 31px;
   border-radius: 10px;
   margin: 0 0 5px 0;
 }
@@ -136,14 +138,14 @@ body {
   align-items: center;
   background-color: #303434;
   border-radius: 10px 10px 10px 10px;
-  height: 35px;
+  height: 31px;
 }
 
 #display {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  height: calc(100% - 89.5px);
+  height: calc(100% - 81.5px);
   background-color: #24242c;
   border-radius: 0 0 10px 10px;
 }
