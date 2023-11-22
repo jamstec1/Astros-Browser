@@ -142,7 +142,7 @@ svg {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  height: calc(100% - 90px);
+  height: calc(100% - 89.5px);
   background-color: #24242c;
   border-radius: 0 0 10px 10px;
 }
@@ -181,7 +181,7 @@ h1 {
 }
 
 #app {
-  width: calc( 30% - 5px);
+  width: calc( 30% - 4.5px);
   height: 100%;
   margin-left: 5px;
   background-color: silver;
