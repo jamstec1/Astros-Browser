@@ -52,14 +52,16 @@ body {
 }
 
 .button {
+  background-color: blue;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
   mix-blend-mode: difference;
   width: fit-content;
   box-sizing: border-box;
-  height: 35px;
+  height: 31px;
+  padding: 1px 0px 1px 0px;
 }
 
 .only {
@@ -71,7 +73,7 @@ body {
 .button svg{
     box-sizing: border-box;
     width: 28px;
-    margin: 0 1px;
+    margin: 0px 2px;
     border-radius: 10px;
 }
 
