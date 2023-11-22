@@ -184,11 +184,12 @@ h1 {
 }
 
 #app {
+  border-top: 1px solid #44444c;
   width: calc( 30% - 4.5px);
   height: 100%;
   margin-left: 5px;
   background-color: transparent;
-  border-radius: 15px 15px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 #appname {
