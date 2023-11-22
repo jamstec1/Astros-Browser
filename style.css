@@ -35,7 +35,7 @@ body {
 }
 
 #browser {
-  border: 1px solid #44444c;
+  border-top: 1px solid #44444c;
   border-radius: 10px;
   box-sizing: border-box;
   height: 100%;
