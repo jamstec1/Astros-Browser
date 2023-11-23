@@ -124,8 +124,18 @@ body {
   border-radius: 0;
 }
 
+#window {
+  height: 100%;
+  width: calc( 100% - 63.5px);
+  display: flex;
+  box-sizing: border-box;
+  background-color: midnightblue;
+  border-radius: 10px;
+}
+
 #rightwindow {
   box-sizing: border-box;
+  maxwidth: 80
   width: 30%;
   height: 100%;
   margin-left: 5px;
@@ -292,7 +302,6 @@ h1 {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  margin-left: 5px;
   background-color: transparent;
   border-radius: 10px 10px 10px 10px;
 }
