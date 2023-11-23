@@ -126,7 +126,7 @@ body {
 
 #rightwindow {
   box-sizing: border-box;
-  width: calc( 30% - 4.5px);
+  width: 30%;
   height: 100%;
   margin-left: 5px;
   background-color: yellow;
