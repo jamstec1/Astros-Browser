@@ -46,18 +46,37 @@ body {
   box-sizing: border-box;
   background-color: blue;
   border-radius: 10px 10px 0 0;
-  padding: 3px;
+  padding: 3px 3px 3px 8px;
 }
 
 #statusdog {
+  padding: 0 10px;
   width: 100%;
   box-sizing: border-box;
+  text-align: center;
   height: 19px;
   background-color: midnightblue;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   border-radius: 10px 10px 0 0;
+}
+
+
+#middlestatus {
+  width: calc( 100% - 100px);
+  height: 100%;
+  background-color: yellow;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+#rightstatus {
+  width: calc( 100% - (100% - 100px));
+  height: 100%;
+  background-color: green;
+  box-sizing: border-box;
+  border-radius: 0;
 }
 
 #padding {
