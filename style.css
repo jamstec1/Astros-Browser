@@ -65,13 +65,13 @@ body {
 #leftstatus {
   width: 48px;
   height: 100%;
-  background-color: skyblue;
   box-sizing: border-box;
   border-radius: 10px 0 0 0;
 }
 
 #middlestatus {
-  width: calc( 100% - 147.5px);
+  margin-left: 52px;
+  width: calc( 100% - 200px);
   height: 100%;
   background-color: yellow;
   box-sizing: border-box;
@@ -79,7 +79,7 @@ body {
 }
 
 #rightstatus {
-  width: calc( 100% - (100% - 147.5px));
+  width: 100px;
   height: 100%;
   background-color: green;
   box-sizing: border-box;
