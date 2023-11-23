@@ -135,7 +135,8 @@ body {
 
 #rightwindow {
   box-sizing: border-box;
-  maxwidth: 80
+  max-width: calc( 80% - 4.5px);
+  min-width: 20%;
   width: 30%;
   height: 100%;
   margin-left: 5px;
@@ -144,6 +145,10 @@ body {
 }
 
 #leftwindow {
+  overflow   : auto;
+  resize: horizontal;
+  max-width: calc( 80% - 4.5px);
+  min-width: 20%;
   box-sizing: border-box;
   border-radius: 10px;
   height: 100%;
