@@ -205,8 +205,8 @@ function app(appname) {
 window.onload = function onLoad() {
   let response = fetch("./test.txt")
   alert(response)
-  .then(data = response.text())
-  .then(alert(data)
-  );
+  .then(response =>{
+   console.log(response);
+});
   alert("2");
 }
