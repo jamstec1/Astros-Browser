@@ -13,6 +13,10 @@ var windows = document.getElementById("window");
 const stylewindow = getComputedStyle(windows);
 var ewidth = 0;
 
+
+import { hello } from './src/src.js'  
+
+
 function fullscreen() {
   document.documentElement.requestFullscreen();
 } // 全画面モードにする
@@ -204,8 +208,7 @@ window.onload = function onLoad() {
   .then(data => data.text())
   .then(data =>{
    alert(data);
-  helloWorld();
 });
 }
 
-import { helloWorld } from './module.js'  
+hello(test);
