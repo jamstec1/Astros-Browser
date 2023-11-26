@@ -15,10 +15,12 @@ function app(appname) {
         if (leftacsses === "0"){
           document.getElementById('leftwindow').innerHTML = data
           leftacsses++;
+          leftname = "browser";
           alert(leftacsses + "leftacsses");
         }else {
           document.getElementById('rightwindow').innerHTML = data
           rightacsses++;
+          rightname = "browser";
           alert(rightacsses + "rightacsses")
         }})
       break;

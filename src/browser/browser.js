@@ -12,17 +12,6 @@ function fullscreen() {
   document.documentElement.requestFullscreen();
 } // 全画面モードにする
 
-function info() {
-  alert(
-    "PRODUCTION(制作):Jamstec/Hayatos/xxx\nUPDATELOG:1.0-作成 1.01-難読化 1.1-プルタブ追加\n1.11-UI調整 1.12-UI自動最適化仮実装 1.13-リンク追加\n1.14-微調整 1.15-リリース 1.16-info及びリンク追加\n1.17-新しいタブ試験実装　1.18-タブ数6→8 1.19-ページ操作\n1.20-自由リンク 1.2i-アイコン追加 1.22-URLバー,リロード追加"
-  );
-}
-
-function help() {
-  alert(
-    "無限の可能性を秘めているproxy\njavascriptを有効にしてください。\npcサイズの画面で正常に機能します。"
-  );
-}
 
 urlbar.addEventListener("keypress", function (e) {
   if (e.keyCode === 13) {
