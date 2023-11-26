@@ -196,17 +196,16 @@ var data;
 let text;
 function app(appname) {
   openname = appname
-  fetch('/text/test.json') // (1) リクエスト送信
-	.then(response => response.json()) // (2) レスポンスデータを取得
-	.then(data => {})
-        }
-        
-        
+  
+        }  
+
 window.onload = function onLoad() {
   let response = fetch("./test.txt")
-  alert(response)
-  .then(response =>{
-   console.log(response);
+  .then(data => data.text())
+  .then(data =>{
+   alert(data);
+  helloWorld();
 });
-  alert("2");
 }
+
+import { helloWorld } from './module.js'  
