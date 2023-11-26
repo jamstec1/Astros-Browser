@@ -1,4 +1,10 @@
-export const hello = function(app) {
-  alert(app);
-  alert('Hello');
+export const app = function(appname) {
+  alert(appname);
+  switch (appname) {
+    case "app":
+      alert("appです")
+      break;
+    case "browser":
+      break;
+  }
 }

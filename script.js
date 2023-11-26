@@ -13,8 +13,9 @@ var windows = document.getElementById("window");
 const stylewindow = getComputedStyle(windows);
 var ewidth = 0;
 
+var data;
 
-import { hello } from './src/src.js'  
+import { app } from './src/src.js'  
 
 
 function fullscreen() {
@@ -194,21 +195,10 @@ $(document).mouseup(function (e) {
   }
 });
 
-var xhr = new XMLHttpRequest();
-var openname;
-var data;
-let text;
-function app(appname) {
-  openname = appname
-  
-        }  
-
-window.onload = function onLoad() {
-  let response = fetch("./test.txt")
-  .then(data => data.text())
-  .then(data =>{
-   alert(data);
-});
+function apppush(appname) {
+  app(appname);
 }
 
-hello(test);
+let response = fetch("./test.txt")
+.then(data => data.text())
+.then(data =>{alert(data)});
