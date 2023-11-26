@@ -7,7 +7,7 @@ export const app = function(appname) {
     case "browser":
       let response = fetch("./browser/browser.html")
       .then(data => data.text())
-      .then(html => document.getElementById('').innerHTML = html)
+      .then(html => document.getElementById('rightwindow').innerHTML = html)
       .then(data =>{});
       break;
   }
