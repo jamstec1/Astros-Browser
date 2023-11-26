@@ -193,6 +193,7 @@ $(document).mouseup(function (e) {
 var xhr = new XMLHttpRequest();
 var openname;
 var data;
+let text;
 function app(appname) {
   openname = appname
   fetch('/text/test.json') // (1) リクエスト送信
@@ -202,10 +203,10 @@ function app(appname) {
         
         
 window.onload = function onLoad() {
-  alert("onload")
   let response = fetch("./test.txt")
-  alert("1")
-  let text = response.text()
-  alert("2")
-  alert(text + "text")
+  alert(response)
+  .then(data = response.text())
+  .then(alert(data)
+  );
+  alert("2");
 }
