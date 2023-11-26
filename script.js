@@ -164,9 +164,11 @@ $("#dragbar").mousedown(function (e) {
     if (dragging) {
       windows.onmousemove = function (e) {
         var target_rect = e.currentTarget.getBoundingClientRect();
+        alert(target_rect)
         ewidth = e.clientX - target_rect.left;
       };
       var percentage = (ewidth / (window.innerWidth * 0.8)) * 100;
+      alert(ewidth + "+" + (window.innerWidth * 0.8))
       if (percentage < 20) {
         percentage = "20";
       } else if (percentage > 80) {
@@ -188,12 +190,3 @@ $(document).mouseup(function (e) {
     dragging = false;
   }
 });
-
-    window.addEventListener('DOMContentLoaded', function(){
-        fetch('https://eating2003.com/demo/load-source.html') //ロード元URL
-        .then(data => data.text())
-        .then(html => document.getElementById('loadArea-2').innerHTML = html) //ロード先ID指定
-        .then(() => {
-                //ロード後の処理を記述                 
-            });
-    });

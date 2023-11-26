@@ -279,7 +279,7 @@ body {
 }
 
 iframe {
-  pointer-events: none;
+  pointer-events: all;
   vertical-align:top;
   box-sizing: border-box;
   height: 100%;
