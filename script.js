@@ -13,9 +13,6 @@ var windows = document.getElementById("window");
 const stylewindow = getComputedStyle(windows);
 var ewidth = 0;
 
-
-import { app } from './src/src.js'
-
 function fullscreen() {
   document.documentElement.requestFullscreen();
 } // 全画面モードにする
@@ -192,7 +189,3 @@ $(document).mouseup(function (e) {
     dragging = false;
   }
 });
-
-function apppush(appname) {
-  app(appname);
-}
