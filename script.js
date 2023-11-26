@@ -192,10 +192,9 @@ $(document).mouseup(function (e) {
 
 var xhr = new XMLHttpRequest();
 var data;
-
+function app(browser) {}
 window.onload = function onLoad() {
-  xhr.open('GET', './browser.html', false);
-  xhr.open('GET', './browser.css', false);// GETでローカルファイルを開く
+  xhr.open('GET', './src/browser/browser.html', false);// GETでローカルファイルを開く
   xhr.onload = () => {
               data = xhr.responseText;
           };
