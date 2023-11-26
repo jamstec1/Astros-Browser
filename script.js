@@ -13,10 +13,8 @@ var windows = document.getElementById("window");
 const stylewindow = getComputedStyle(windows);
 var ewidth = 0;
 
-var data;
 
-import { app } from './src/src.js'  
-
+import { app } from './src/src.js'
 
 function fullscreen() {
   document.documentElement.requestFullscreen();
