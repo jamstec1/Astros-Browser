@@ -10,6 +10,7 @@ var URL = 0;
 var dragging = false;
 var iframe = document.getElementById("ub");
 var windows = document.getElementById("window");
+const stylewindow = getComputedStyle(windows);
 var ewidth = 0;
 
 function fullscreen() {
@@ -164,11 +165,10 @@ $("#dragbar").mousedown(function (e) {
     if (dragging) {
       windows.onmousemove = function (e) {
         var target_rect = e.currentTarget.getBoundingClientRect();
-        alert(target_rect)
         ewidth = e.clientX - target_rect.left;
       };
-      var percentage = (ewidth / (window.innerWidth * 0.8)) * 100;
-      alert(ewidth + "+" + (window.innerWidth * 0.8))
+      var percentage = (ewidth / stylewindow.width * 100);
+      alert(stylewindow.width)
       if (percentage < 20) {
         percentage = "20";
       } else if (percentage > 80) {
