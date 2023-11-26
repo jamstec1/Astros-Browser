@@ -1,12 +1,18 @@
+let leftacsses = 1;
+let rightacsses = 0;
+
 function app(appname) {
-  var data;
   alert(appname);
   switch (appname) {
     case "browser":
       let response = fetch("./src/browser/browser.html")
-      .then(data => data.text())
-      alert(data)
-      .then(html => document.getElementById('rightwindow').innerHTML = html)
+      .then(response => response.text())
+      .then(data => {
+        console.log(data)
+        if (leftacsses === 0){
+          
+        }else {
+        document.getElementById('rightwindow').innerHTML = data}})
       break;
   }
 }
