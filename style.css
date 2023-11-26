@@ -144,6 +144,14 @@ body {
   border-radius: 10px 10px 10px 10px;
 }
 
+#dragbar {
+  background-color: white;
+  height: 100%;
+  float: right;
+  width: 3px;
+  cursor: col-resize;
+}
+
 #leftwindow {
   overflow   : auto;
   resize: horizontal;

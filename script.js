@@ -2,11 +2,15 @@ let urlbar = document.getElementById("urlbar");
 let linkbar = "0";
 let searchtype = "google";
 
-
 let number = 0;
 let foremost = 0;
 var urls = ["https://www.8bitdash.com"];
 var URL = 0;
+
+var dragging = false;
+var iframe = document.getElementById('ub');
+var windows = document.getElementById("window");
+var ewidth = 0;
 
 function fullscreen() {
   document.documentElement.requestFullscreen();
@@ -149,6 +153,39 @@ $(function(){
   });
 });
 
-function bookmark() {
-  
-}
+$('#dragbar').mousedown(function(e) {
+  e.preventDefault();
+  iframe.style.pointerEvents = 'none';
+
+  dragging = true;
+  var main = $('#main');
+
+  $(document).mousemove(function(e) {
+    if (dragging) {
+      windows.onmousemove = function(e){
+        var target_rect = e.currentTarget.getBoundingClientRect();
+        ewidth = e.clientX - target_rect.left;
+      }
+      var percentage = (ewidth / (window.innerWidth * 0.8)) * 100;
+      if (percentage < 20) {
+        percentage = "20"
+      } else if (percentage > 80) {
+        percentage = "80"
+      }
+      var mainPercentage = 100 - percentage;
+
+      $('#console').text("side:" + percentage + " main:" + mainPercentage);
+      $('#leftbar').css("width", percentage + "%");
+      $('#rightbar').css("width", mainPercentage + "%");
+    }
+  });
+
+});
+
+$(document).mouseup(function(e) {
+  if (dragging) {
+    $(document).unbind('mousemove');
+    iframe.style.pointerEvents = 'all';
+    dragging = false;
+  }
+});
