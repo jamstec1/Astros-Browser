@@ -189,3 +189,20 @@ $(document).mouseup(function (e) {
     dragging = false;
   }
 });
+
+var xhr = new XMLHttpRequest();
+var data;
+
+window.onload = function onLoad() {
+  xhr.open('GET', './browser.html', false);
+  xhr.open('GET', './browser.css', false);// GETでローカルファイルを開く
+  xhr.onload = () => {
+              data = xhr.responseText;
+          };
+  xhr.onerror = () => {
+             console.log("error!");
+          };
+  
+  xhr.send();
+  alert(data)
+}
