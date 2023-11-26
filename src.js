@@ -11,13 +11,14 @@ function app(appname) {
       .then(response => response.text())
       .then(data => {
         console.log(data)
-        if (leftacsses === 0){
+        if (leftacsses === "0"){
           document.getElementById('leftwindow').innerHTML = data
           leftacsses++;
-          alert(leftacsses);
+          alert(leftacsses + "leftacsses");
         }else {
           document.getElementById('rightwindow').innerHTML = data
           rightacsses++;
+          alert(rightacsses + "rightacsses")
         }})
       break;
   }
@@ -29,10 +30,14 @@ function closewindow(closeapp) {
       document.getElementById("browser").remove();
       if (leftname === "browser") {
         leftname = "blank";
-        leftacsses = "0"
+        leftacsses = "0";
+        alert(leftname　+ "leftname");
+        alert(leftacsses + "leftacsses");
       } else if (rightname === "browser"){
         rightname = "blank";
         rightacsses = "0";
+        alert(rightname + "rightname");
+        alert(rightacsses + "rightacsses");
       }
       break;
   }
