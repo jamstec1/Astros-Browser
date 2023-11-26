@@ -148,14 +148,6 @@ function reload() {
   }
 }
 
-function closewindow(closeapp) {
-  switch(closeapp) {
-    case "browser":
-      document.getElementById("browser").remove();
-      break;
-  }
-}
-
 $("#dragbar").mousedown(function (e) {
   e.preventDefault();
   iframe.style.pointerEvents = "none";
