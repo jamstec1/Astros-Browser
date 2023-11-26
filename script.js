@@ -169,7 +169,7 @@ $("#dragbar").mousedown(function (e) {
         var target_rect = e.currentTarget.getBoundingClientRect();
         ewidth = e.clientX - target_rect.left;
       };
-      var percentage = (ewidth / stylewindow.width.replace( "px" , "" )) * 100;
+      var percentage = (ewidth / (stylewindow.width.replace( "px" , "" ) - "8")) * 100;
       if (percentage < 20) {
         percentage = "20";
       } else if (percentage > 80) {

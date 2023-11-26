@@ -44,9 +44,9 @@ body {
   height: 25px;
   display: flex;
   box-sizing: border-box;
-  background-color: #24242c;
+  background-color: #2F3242;
   border-radius: 10px 10px 0 0;
-  padding: 3px 3px 3px 8px;
+  padding: 3px 8px 3px 8px;
 }
 
 #statusdog {
@@ -62,29 +62,32 @@ body {
 }
 
 #leftstatus {
+  color: #a2ecfb;
   width: 48px;
   height: 100%;
   box-sizing: border-box;
   border-radius: 10px 0 0 0;
-  background-color: #2F3242;
+  background-color: #24242c;
 }
 
 #middlestatus {
+  color: #a2ecfb;
   width: calc( 100% - 148px);
   height: 100%;
   display: flex;
   justify-content:center;
-  background-color: #2F3242;
+  background-color: #24242c;
   box-sizing: border-box;
   border-radius: 0;
 }
 
 #rightstatus {
+  color: #a2ecfb;
   width: 100px;
   height: 100%;
   display: flex;
   justify-content: flex-end;
-  background-color: #2F3242;
+  background-color: #24242c;
   box-sizing: border-box;
   border-radius: 0 10px 0 0;
 }
@@ -134,8 +137,10 @@ body {
   width: calc( 100% - 63.5px);
   display: flex;
   box-sizing: border-box;
-  background-color: #2F3242;
+  background-color: #24242c;
   border-radius: 10px;
+  padding-right: 8px;
+  padding-bottom: 3px;
 }
 
 #rightwindow {
@@ -144,7 +149,7 @@ body {
   min-width: 20%;
   width: 30%;
   height: 100%;
-  background-color: #24242c;
+  background-color: ;
   border-radius: 10px 10px 10px 10px;
 }
 
