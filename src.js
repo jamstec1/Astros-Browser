@@ -12,6 +12,7 @@ function app(appname) {
       .then(data => {
         console.log(data)
         if (leftacsses === "0"){
+          
           document.getElementById('leftwindow').innerHTML = data
           leftacsses++;
           alert(leftacsses + "leftacsses");
