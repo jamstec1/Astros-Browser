@@ -189,4 +189,11 @@ $(document).mouseup(function (e) {
   }
 });
 
-
+    window.addEventListener('DOMContentLoaded', function(){
+        fetch('https://eating2003.com/demo/load-source.html') //ロード元URL
+        .then(data => data.text())
+        .then(html => document.getElementById('loadArea-2').innerHTML = html) //ロード先ID指定
+        .then(() => {
+                //ロード後の処理を記述                 
+            });
+    });
