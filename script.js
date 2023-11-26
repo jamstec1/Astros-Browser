@@ -191,8 +191,12 @@ $(document).mouseup(function (e) {
 });
 
 var xhr = new XMLHttpRequest();
+var openname;
 var data;
-function app(browser) {}
+function app(appname) {
+  openname = appname
+  xhr.open('GET', './src/src.js', false);
+}
 window.onload = function onLoad() {
   xhr.open('GET', './src/browser/browser.html', false);// GETでローカルファイルを開く
   xhr.onload = () => {
