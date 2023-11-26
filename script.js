@@ -8,7 +8,7 @@ var urls = ["https://www.8bitdash.com"];
 var URL = 0;
 
 var dragging = false;
-var iframe = document.getElementById('ub');
+var iframe = document.getElementById("ub");
 var windows = document.getElementById("window");
 var ewidth = 0;
 
@@ -147,45 +147,44 @@ function reload() {
   }
 }
 
-$(function(){
-  $('input[type="text"]').focus(function(){
+$(function () {
+  $('input[type="text"]').focus(function () {
     $(this).select();
   });
 });
 
-$('#dragbar').mousedown(function(e) {
+$("#dragbar").mousedown(function (e) {
   e.preventDefault();
-  iframe.style.pointerEvents = 'none';
+  iframe.style.pointerEvents = "none";
 
   dragging = true;
-  var main = $('#main');
+  var main = $("#main");
 
-  $(document).mousemove(function(e) {
+  $(document).mousemove(function (e) {
     if (dragging) {
-      windows.onmousemove = function(e){
+      windows.onmousemove = function (e) {
         var target_rect = e.currentTarget.getBoundingClientRect();
         ewidth = e.clientX - target_rect.left;
-      }
+      };
       var percentage = (ewidth / (window.innerWidth * 0.8)) * 100;
       if (percentage < 20) {
-        percentage = "20"
+        percentage = "20";
       } else if (percentage > 80) {
-        percentage = "80"
+        percentage = "80";
       }
       var mainPercentage = 100 - percentage;
 
-      $('#console').text("side:" + percentage + " main:" + mainPercentage);
-      $('#leftbar').css("width", percentage + "%");
-      $('#rightbar').css("width", mainPercentage + "%");
+      //("left:" + percentage + " right:" + mainPercentage);
+      $("#leftwindow").css("width", percentage + "%");
+      $("#rightwindow").css("width", mainPercentage + "%");
     }
   });
-
 });
 
-$(document).mouseup(function(e) {
+$(document).mouseup(function (e) {
   if (dragging) {
-    $(document).unbind('mousemove');
-    iframe.style.pointerEvents = 'all';
+    $(document).unbind("mousemove");
+    iframe.style.pointerEvents = "all";
     dragging = false;
   }
 });
