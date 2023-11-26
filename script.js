@@ -194,9 +194,13 @@ var xhr = new XMLHttpRequest();
 var openname;
 var data;
 function app(appname) {
+  
   openname = appname
-  xhr.open('GET', './src/src.js', false);
-}
+  
+  fetch('/text/test.json') // (1) リクエスト送信
+	.then(response => response.json()) // (2) レスポンスデータを取得
+	.then(data => {}}
+        
 window.onload = function onLoad() {
   xhr.open('GET', './src/browser/browser.html', false);// GETでローカルファイルを開く
   xhr.onload = () => {
