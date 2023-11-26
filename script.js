@@ -148,11 +148,15 @@ function reload() {
   }
 }
 
-$(function () {
-  $('input[type="text"]').focus(function () {
-    $(this).select();
-  });
-});
+function close(closeapp) {
+  alert()
+  switch(closeapp) {
+    case "browser":
+      alert("browser")
+      document.getElementById("list1").remove();
+      break;
+  }
+}
 
 $("#dragbar").mousedown(function (e) {
   e.preventDefault();
