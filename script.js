@@ -148,12 +148,10 @@ function reload() {
   }
 }
 
-function close(closeapp) {
-  alert()
+function closewindow(closeapp) {
   switch(closeapp) {
     case "browser":
-      alert("browser")
-      document.getElementById("list1").remove();
+      document.getElementById("browser").remove();
       break;
   }
 }
