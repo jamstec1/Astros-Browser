@@ -202,9 +202,10 @@ function app(appname) {
         
         
 window.onload = function onLoad() {
-  fetch("/test.txt")
-  .then(response => response.txt())
-  .then(data => {
-    alert(data)
-  }
+  alert("onload")
+  let response = fetch("./test.txt")
+  alert("1")
+  let text = response.text()
+  alert("2")
+  alert(text + "text")
 }
