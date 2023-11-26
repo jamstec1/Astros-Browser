@@ -198,7 +198,3 @@ $(document).mouseup(function (e) {
 function apppush(appname) {
   app(appname);
 }
-
-let response = fetch("./test.txt")
-.then(data => data.text())
-.then(data =>{alert(data)});
