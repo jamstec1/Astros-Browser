@@ -202,7 +202,9 @@ function app(appname) {
         
         
 window.onload = function onLoad() {
-  alert("load")
-  const response = fetch("./data.txt");
-  const text = await response.text();
+  fetch("/test.txt")
+  .then(response => response.txt())
+  .then(data => {
+    alert(data)
+  }
 }
