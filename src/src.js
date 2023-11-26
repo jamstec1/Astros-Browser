@@ -1,3 +1,5 @@
+var data;
+
 export const app = function(appname) {
   alert(appname);
   switch (appname) {
@@ -8,7 +10,7 @@ export const app = function(appname) {
       let response = fetch("./browser/browser.html")
       .then(data => data.text())
       .then(html => document.getElementById('rightwindow').innerHTML = html)
-      .then(data =>{});
+      .then(data =>{let response = fetch("./browser/browser.html")});
       break;
   }
 }
