@@ -2,18 +2,12 @@ let leftacsses = 1;
 let rightacsses = 0;
 let leftname = "browser";
 let rightname = "blank";
-let browserS = 0;
 
 function app(appname) {
   alert(appname);
   switch (appname) {
     case "browser":
       alert(document.getElementById('script'))
-      browserS = 1;
-      alert(browserS)
-      var script = document.createElement('script'); //変数名は適当なものにでも
-      script.src = "./src/browser/browser.js"; //ファイルパス
-      document.head.appendChild(script);
       
       let response = fetch("./src/browser/browser.html")
       .then(response => response.text())
@@ -36,11 +30,6 @@ function app(appname) {
 function closewindow(closeapp) {
   switch(closeapp) {
     case "browser":
-      if (browserS === "1"){
-      browserS = "0";
-      alert(browserS)
-      document.removeChild(script);
-      } else {alert("error")}
       document.getElementById("browser").remove();
       if (leftname === "browser") {
         leftname = "blank";
