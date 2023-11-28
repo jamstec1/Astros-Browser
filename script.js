@@ -193,7 +193,6 @@ area.addEventListener('mousedown', () => {
   urlbar = document.getElementById("urlbar");
   iframe = document.getElementById("ub");
   urlbar.addEventListener("keypress", function (e) {
-  alert("ok")
   if (e.keyCode === 13) {
     alert("link")
     linkbar = document.getElementById("urlbar").value;
