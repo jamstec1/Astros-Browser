@@ -13,6 +13,8 @@ var windows = document.getElementById("window");
 const stylewindow = getComputedStyle(windows);
 var ewidth = 0;
 
+let area = document.getElementById("os");
+
 function fullscreen() {
   document.documentElement.requestFullscreen();
 } // 全画面モードにする
@@ -30,7 +32,9 @@ function help() {
 }
 
 urlbar.addEventListener("keypress", function (e) {
+  alert("ok")
   if (e.keyCode === 13) {
+    alert("link")
     linkbar = document.getElementById("urlbar").value;
     if (linkbar) {
       if (linkbar.indexOf(".") === -1) {
@@ -182,4 +186,64 @@ $(document).mouseup(function (e) {
     iframe.style.pointerEvents = "all";
     dragging = false;
   }
+});
+
+area.addEventListener('mousedown', () => {
+  alert('マウスボタンを押した。');
+  urlbar = document.getElementById("urlbar");
+  iframe = document.getElementById("ub");
+  urlbar.addEventListener("keypress", function (e) {
+  alert("ok")
+  if (e.keyCode === 13) {
+    alert("link")
+    linkbar = document.getElementById("urlbar").value;
+    if (linkbar) {
+      if (linkbar.indexOf(".") === -1) {
+        switch (searchtype) {
+          case "google":
+            console.log("google");
+            URL =
+              "https://www.google.com/search?q=" +
+              linkbar +
+              "&sca_esv=583768629&igu=1";
+            break;
+          case "bing":
+            console.log("bing");
+            URL = "https://www.bing.com/search?q=" + linkbar;
+            break;
+        }
+      } else {
+        if (linkbar.indexOf("https://") === -1) {
+          URL = "https://" + linkbar;
+        } else {
+          URL = linkbar;
+        }
+      }
+      if (number === foremost) {
+        if (URL !== urls[foremost]) {
+          number++;
+          foremost++;
+          urls.push(URL);
+        }
+        console.log(urls);
+        console.log(number);
+        console.log(foremost);
+        document.getElementById("urlbar").value = URL;
+        document.getElementById("ub").src = URL;
+      } else {
+        if (URL !== urls[foremost]) {
+          //
+          foremost++;
+          urls.push(URL);
+        }
+        number = foremost;
+        console.log(urls);
+        console.log(number);
+        console.log(foremost);
+        document.getElementById("urlbar").value = URL;
+        document.getElementById("ub").src = URL;
+      }
+    }
+  }
+});
 });
