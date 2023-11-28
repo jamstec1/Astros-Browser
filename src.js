@@ -2,13 +2,18 @@ let leftacsses = 1;
 let rightacsses = 0;
 let leftname = "browser";
 let rightname = "blank";
+var script;
 
 function app(appname) {
   alert(appname);
   switch (appname) {
     case "browser":
       alert(document.getElementById('script'))
-      document.getElementById('script').innerHTML = '<script src="./src/browser/browser.js"></script>'
+      
+      var script = document.createElement('script'); //変数名は適当なものにでも
+      script.src = "/src/browser/browser.js"; //ファイルパス
+      document.head.appendChild(script);
+      
       let response = fetch("./src/browser/browser.html")
       .then(response => response.text())
       .then(data => {
@@ -30,6 +35,8 @@ function app(appname) {
 function closewindow(closeapp) {
   switch(closeapp) {
     case "browser":
+      if
+      document.removeChild(script);
       document.getElementById("browser").remove();
       if (leftname === "browser") {
         leftname = "blank";

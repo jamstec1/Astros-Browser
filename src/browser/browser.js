@@ -7,7 +7,7 @@ let foremost = 0;
 var urls = ["https://www.8bitdash.com"];
 var URL = 0;
 
-
+alert("input")
 function fullscreen() {
   document.documentElement.requestFullscreen();
 } // 全画面モードにする
