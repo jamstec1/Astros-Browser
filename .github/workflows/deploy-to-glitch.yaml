@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy To Glitch
-        uses: jamstec1/astro-s_UB@main
+        uses: kanadgupta/glitch-sync@main
         with:
           project-id: '${{ secrets.PROJECT_ID }}'
           auth-token: '${{ secrets.AUTH_TOKEN }}'
